@@ -36,8 +36,8 @@ endpoints:
 rest:
   connect_server: "${REST_CONNECT_SERVER:true}"
   url: "${REST_URL:http://localhost:8080}"
-  username: "${REST_USERNAME:tenant@thingsboard.org}"
-  password: "${REST_PASSWORD:tenant}"
+  username: "${REST_USERNAME:justin@fjzjdz.com}"
+  password: "${REST_PASSWORD:111111}"
 mqtt:
   host: "${MQTT_HOST:localhost}"
   port: "${MQTT_PORT:1883}"
@@ -126,10 +126,10 @@ device:
   # Device API to use - MQTT, HTTP or LWM2M
   api: "${DEVICE_API:MQTT}"
   startIdx: "${DEVICE_START_IDX:0}"
-  endIdx: "${DEVICE_END_IDX:1000}"
-  count: "${DEVICE_COUNT:1000}" # count of devices to be used by clients in k8s deployment run
+  endIdx: "${DEVICE_END_IDX:100}"
+  count: "${DEVICE_COUNT:100}" # count of devices to be used by clients in k8s deployment run
   createOnStart: "${DEVICE_CREATE_ON_START:true}"
-  deleteOnComplete: "${DEVICE_DELETE_ON_COMPLETE:false}"
+  deleteOnComplete: "${DEVICE_DELETE_ON_COMPLETE:true}"
 gateway:
   startIdx: "${GATEWAY_START_IDX:0}"
   endIdx: "${GATEWAY_END_IDX:10}"
@@ -143,7 +143,7 @@ customer:
   deleteOnComplete: "${CUSTOMER_DELETE_ON_COMPLETE:false}"
 dashboard:
   createOnStart: "${DASHBOARD_CREATE_ON_START:true}"
-  deleteOnComplete: "${DASHBOARD_DELETE_ON_COMPLETE:false}"
+  deleteOnComplete: "${DASHBOARD_DELETE_ON_COMPLETE:true}"
   deleteIfExists: "${DASHBOARD_DELETE_IF_EXISTS:false}"
   tenant: alarms.json # please use comma separated list for multiple dashboards: dashboard1.json, dashboard2.json
   shared: "devices.json"
@@ -171,8 +171,8 @@ test:
   ruleChainName:  "${RULE_CHAIN_NAME:root_rule_chain_ce.json}"
   # messages per second.
   telemetry: "${TEST_TELEMETRY:true}"
-  mps: "${MESSAGES_PER_SECOND:1000}"
-  duration: "${DURATION_IN_SECONDS:300}"
+  mps: "${MESSAGES_PER_SECOND:100}"
+  duration: "${DURATION_IN_SECONDS:100}"
   alarms:
     start: "${ALARM_STORM_START_SECOND:0}"
     end: "${ALARM_STORM_END_SECOND:999999}"

@@ -46,7 +46,7 @@
         <tb-ce-performance-test.docker.name>tb-ce-performance-test</tb-ce-performance-test.docker.name>
         <docker.push-arm-amd-image.phase>pre-integration-test</docker.push-arm-amd-image.phase>
 
-        <thingsboard.version>3.3.3</thingsboard.version>
+        <thingsboard.version>3.3.2</thingsboard.version>
         <spring-boot.version>2.6.1</spring-boot.version>
         <spring.version>5.3.13</spring.version>
         <lombok.version>1.18.22</lombok.version>
