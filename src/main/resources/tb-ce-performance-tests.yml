@@ -126,8 +126,8 @@ device:
   # Device API to use - MQTT, HTTP or LWM2M
   api: "${DEVICE_API:MQTT}"
   startIdx: "${DEVICE_START_IDX:0}"
-  endIdx: "${DEVICE_END_IDX:100}"
-  count: "${DEVICE_COUNT:100}" # count of devices to be used by clients in k8s deployment run
+  endIdx: "${DEVICE_END_IDX:500}"
+  count: "${DEVICE_COUNT:500}" # count of devices to be used by clients in k8s deployment run
   createOnStart: "${DEVICE_CREATE_ON_START:true}"
   deleteOnComplete: "${DEVICE_DELETE_ON_COMPLETE:true}"
 gateway:
@@ -171,7 +171,7 @@ test:
   ruleChainName:  "${RULE_CHAIN_NAME:root_rule_chain_ce.json}"
   # messages per second.
   telemetry: "${TEST_TELEMETRY:true}"
-  mps: "${MESSAGES_PER_SECOND:100}"
+  mps: "${MESSAGES_PER_SECOND:500}"
   duration: "${DURATION_IN_SECONDS:100}"
   alarms:
     start: "${ALARM_STORM_START_SECOND:0}"
