@@ -7,7 +7,7 @@
   "provisionType": "DISABLED",
   "defaultRuleChainId": null,
   "defaultDashboardId": null,
-  "defaultQueueName": "",
+  "defaultQueueName": "Main",
   "profileData": {
     "configuration": {
       "type": "DEFAULT"

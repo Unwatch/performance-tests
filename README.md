@@ -112,3 +112,6 @@ docker run -it --rm --network host --name tb-perf-test \
            --env MQTT_HOST=demo.thingsboard.io \
            thingsboard/tb-ce-performance-test:latest
 ```
+
+## 运行命令
+docker run -it --env-file .env --name tb-perf-test thingsboard/tb-ce-performance-test:3.3.2-SNAPSHOT
